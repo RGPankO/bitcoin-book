@@ -1,0 +1,69 @@
+﻿Table of Contents
+Introduction
+* Purpose and significance of the book.
+* A brief history of Bitcoin.
+* The importance of debunking myths.
+Part I: Understanding the Basics
+* What is Bitcoin?
+   * Defining Bitcoin and its core principles.
+   * The idea of decentralization and blockchain.
+Part II: Technical Aspects and Challenges
+* Bitcoin is too slow
+* Bitcoin has been hacked multiple times - it's not secure
+* Quantum computers will break Bitcoin's security
+* Bitcoin's 51% attack vulnerability
+* What if the Electricity is gone?
+* What if the Internet stops?
+* Bitcoin's traceability and its implications for privacy
+* Bitcoin transactions are not truly anonymous
+* Bitcoin is not truly decentralized
+* Transaction fees will make Bitcoin unusable in the future
+Part III: Economic Concerns and Value Proposition
+* We need inflation, so therefore Bitcoin standard is impossible as it's limited supply currency
+* Bitcoin doesn't bring any value, it's used only by speculators to gamble on it
+* It's already too late, it's too expensive now, I would just be exit liquidity for the people who bought it earlier
+* With 9 billion people, 21 million Bitcoin is just not enough
+* Bitcoin's deflationary nature is bad for the economy
+* Bitcoin is a pyramid scheme or Ponzi scheme
+* Bitcoin is just a digital illusion with no real value
+* Bitcoin is too volatile to be used as a currency/money
+* Bitcoin miners will stop mining it because of the halving and the reduced block subsidy
+Part IV: Societal Implications and Usage
+* Bitcoin is just used by criminals and to launder money; that is its only use case today
+* Bitcoin and its association with the dark web
+* You cannot buy anything with Bitcoin - no vendor accepts it
+* The majority of Bitcoin is owned by a few, leading to centralization
+* Bitcoin is too complicated for the common person to use
+* The fallacy of "Not your keys, not your Bitcoin"
+Part V: Historical and Regulatory Myths
+* CIA made Bitcoin
+* The Governments are going to ban it
+* Only in third-world countries is there high and hyperinflation; in western civilizations, there can never be hyperinflation
+* Satoshi Nakamoto is going to sell all his Bitcoin and crash the price to zero
+* Satoshi Nakamoto made Bitcoin just to steal people's money by selling it to them
+* Bitcoin burns too much energy!
+Part VI: Envisioning the Future
+* The Road Ahead for Bitcoin
+   * Discussing potential future developments and challenges.
+   * How the myths can shape or misshape the future trajectory of Bitcoin.
+* Conclusion
+   * Summing up the journey through the myths and the truths uncovered.
+   * The significance of informed decisions and understanding in the world of cryptocurrencies.
+Appendix
+* Glossary of Terms
+   * A handy reference for terms used throughout the book.
+* Resources and Further Reading
+   * Directing readers to credible sources for deep dives on certain topics.
+
+
+
+
+Защо вечно падащите цени няма да се позволят, а са нормалното нещо
+
+
+Би ли изчакал 10 години за да падне цената на айфона от 100 лв на 10 лв или би взел днес за 100 лв?
+
+
+
+
+Moderмодерното време и как банките са против Биткойн, особено централните банки
