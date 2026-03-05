@@ -1,0 +1,1 @@
+../chapters/04c-ipotekata-kato-pechatnitsa.md

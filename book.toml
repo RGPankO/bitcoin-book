@@ -1,0 +1,23 @@
+[book]
+title = "Биткойн в Пламенов глас"
+authors = ["Пламен Панков"]
+description = "Образование за парите и Биткойн — на разбираем български"
+language = "bg"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+site-url = "/bitcoin-book/"
+git-repository-url = "https://github.com/RGPankO/bitcoin-book"
+edit-url-template = ""
+no-section-label = false
+default-theme = "navy"
+preferred-dark-theme = "navy"
+mathjax-support = false
+
+[output.html.fold]
+enable = true
+level = 1
