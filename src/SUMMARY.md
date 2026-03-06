@@ -13,6 +13,7 @@
 - [Глава 4: Банките и свободния пазар](04-bankite-i-svobodniya-pazar.md)
 - [Глава 4б: Когато жилището стана инвестиция](04b-imoti-razhdalnost.md)
 - [Глава 4в: Ипотеката като печатница](04c-ipotekata-kato-pechatnitsa.md)
+- [Глава 4г: Парите като система за контрол](04d-parite-kato-kontrol.md)
 
 ## Част II: Биткойн — Какво и Защо
 
