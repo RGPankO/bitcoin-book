@@ -580,6 +580,8 @@ HODL, 1 BTC = 1 BTC, Not your keys, Stack sats, Have fun staying poor, Generatio
 | 18-byudesheto-nov-monetaren-standart.md | Гл. 18: Бъдещето — Новият монетарен стандарт | 3 654 |
 | 19-kakvo-da-pravish-ti.md | Гл. 19: Какво да правиш ТИ | 4 963 |
 | 20-zaklyuchenie.md | Заключение | 1 308 |
+| 21-teoria-na-igrite-mezhdu-natsii.md | Гл. 21: Теория на игрите между нации | ~2 000 |
+| 22-mirnata-revolyutsiya.md | Гл. 22: Мирната революция | 1 356 |
 | appendix-a-rechnik.md | Приложение А: Речник | 1 278 |
 | appendix-b-literatura.md | Приложение Б: Препоръчана литература | 796 |
 | appendix-d-sleng.md | Приложение Д: Слоганите и техният смисъл | 663 |
@@ -594,7 +596,7 @@ HODL, 1 BTC = 1 BTC, Not your keys, Stack sats, Have fun staying poor, Generatio
 | III: Историята | 8-10а (5 файла) | 5 | 17 005 |
 | IV: Употребите | 11-12 + 11б (3 файла) | 3 | 11 743 |
 | V: Митовете | 13-17 (5 файла) | 5 | 21 595 |
-| VI: Бъдещето | 18-19 (2 файла) | 2 | 8 617 |
+| VI: Бъдещето | 18-19, 21-22 (4 файла) | 4 | ~12 000 |
 | Заключение | — | 1 | 1 308 |
 | Приложения | А, Б, Д (3 файла) | 3 | 2 737 |
 | **ОБЩО** | | **32 файла** | **108 151** |
