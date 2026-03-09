@@ -18,6 +18,8 @@ default-theme = "navy"
 preferred-dark-theme = "navy"
 mathjax-support = false
 
+additional-js = ["tts.js"]
+
 [output.html.fold]
 enable = true
 level = 1
