@@ -1,0 +1,1 @@
+../chapters/11c-bitcoin-kato-sobstvenost.md

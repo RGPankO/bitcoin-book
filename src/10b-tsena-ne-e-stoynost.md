@@ -1,0 +1,1 @@
+../chapters/10b-tsena-ne-e-stoynost.md
