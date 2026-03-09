@@ -10,6 +10,7 @@
 - [Глава 2: Фиатният експеримент — 1971 и последствията му](02-fiatniyat-eksperiment.md)
 - [Глава 3: Инфлацията — данъкът, който не гласуваш](03-inflatsiyata-danakut.md)
 - [Глава 3а: Откраднатият прогрес](03a-odkradnatiyat-progres.md)
+- [Глава 3б: Времево предпочитание](03b-vremevo-predpochitanie.md)
 - [Глава 4: Банките и свободния пазар](04-bankite-i-svobodniya-pazar.md)
 - [Глава 4б: Когато жилището стана инвестиция](04b-imoti-razhdalnost.md)
 - [Глава 4в: Ипотеката като печатница](04c-ipotekata-kato-pechatnitsa.md)
@@ -28,25 +29,31 @@
 - [Глава 9а: Кризите, Които Укрепиха Биткойн](09a-krizite-ukrepili-bitcoin.md)
 - [Глава 9б: Техническата еволюция](09b-tehnicheska-evolyutsiya.md)
 - [Глава 10: Институционализирането](10-institutsionaliziraneto.md)
+- [Глава 10а: Аргументът за $500,000 — Уинклвос](10a-winklevoss-500k.md)
+- [Глава 10б: Цена ≠ Стойност — GDP капанът](10b-tsena-ne-e-stoynost.md)
 
 ## Част IV: Практика и Свобода
 
 - [Глава 11: Проблемът със спестяването](11-problemat-sus-spestiavaneto.md)
 - [Глава 11б: Всичко е обещание — IOU](11b-vsichko-e-iou.md)
+- [Глава 11в: Bitcoin като собственост](11c-bitcoin-kato-sobstvenost.md)
 - [Глава 12: Свободата, която Биткойн дава](12-svobodata-koiato-bitcoin-dava.md)
 
 ## Част V: Митовете
 
 - [Глава 13: Техническите митове](13-tehnicheskie-mitove.md)
 - [Глава 14: Икономическите митове](14-ikonomicheskite-mitove.md)
+- [Глава 14б: AI, Роботи и Дефлацията](14b-ai-roboti-deflatsiata.md)
 - [Глава 15: Социалните и политическите митове](15-sotsialnite-mitove.md)
 - [Глава 16: Митовете за управлението](16-upravlenieto-na-bitcoin.md)
 - [Глава 17: Митовете за бъдещето](17-mitovete-za-byudeshteto.md)
 
 ## Част VI: Бъдещето
 
+- [Глава 21: Теория на игрите между нации](21-teoria-na-igrite-mezhdu-natsii.md)
 - [Глава 18: Новият монетарен стандарт](18-byudesheto-nov-monetaren-standart.md)
 - [Глава 19: Какво да правиш ТИ](19-kakvo-da-pravish-ti.md)
+- [Глава 22: Мирната революция](22-mirnata-revolyutsiya.md)
 - [Заключение](20-zaklyuchenie.md)
 
 ---
