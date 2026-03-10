@@ -21,11 +21,7 @@
       <button id="ttsPause" title="Пауза" disabled>⏸</button>
       <button id="ttsStop" title="Стоп" disabled>⏹</button>
       <select id="ttsVoice"></select>
-      <div class="tts-speed">
-        <button class="tts-speed-btn" data-rate="0.85">0.85×</button>
-        <button class="tts-speed-btn active" data-rate="1">1×</button>
-        <button class="tts-speed-btn" data-rate="1.25">1.25×</button>
-      </div>
+<!-- speed removed -->
       <span id="ttsStatus" class="tts-status"></span>
     </div>
   `;
@@ -51,25 +47,13 @@
       border: 1px solid var(--sidebar-separator, #444); padding: 5px 8px; border-radius: 6px; font-size: 13px;
       max-width: 200px;
     }
-    .tts-speed { display: flex; align-items: center; gap: 2px; }
-    .tts-speed-btn {
-      background: transparent !important; color: var(--sidebar-fg, #999) !important;
-      border: 1px solid var(--sidebar-separator, #444) !important;
-      padding: 4px 10px !important; border-radius: 4px !important;
-      font-size: 13px !important; cursor: pointer; min-width: 36px;
-      transition: all 0.1s ease;
-    }
-    .tts-speed-btn:hover { color: var(--fg, #ddd) !important; }
-    .tts-speed-btn.active {
-      background: var(--links, #4e8bda) !important; color: white !important;
-      border-color: var(--links, #4e8bda) !important;
-    }
+/* speed controls removed */
     .tts-status { font-size: 12px; color: var(--sidebar-fg, #999); margin-left: auto; }
     .tts-highlight { background: rgba(78,139,218,0.15); border-radius: 3px; }
     @media (max-width: 600px) {
       .tts-bar { gap: 6px; padding: 8px 10px; }
       .tts-bar select { max-width: 120px; font-size: 12px; }
-      .tts-speed-btn { padding: 3px 7px !important; font-size: 12px !important; min-width: 30px; }
+/* speed removed */
     }
   `;
   document.head.appendChild(style);
@@ -246,17 +230,7 @@
   document.getElementById('ttsPlay').addEventListener('click', startReading);
   document.getElementById('ttsPause').addEventListener('click', togglePause);
   document.getElementById('ttsStop').addEventListener('click', stopReading);
-  // Speed buttons
-  document.querySelectorAll('.tts-speed-btn').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
-      var b = e.target.closest('.tts-speed-btn');
-      if (!b) return;
-      currentRate = parseFloat(b.dataset.rate);
-      document.querySelectorAll('.tts-speed-btn').forEach(function(x) { x.classList.remove('active'); });
-      b.classList.add('active');
-      if (started && !isPaused) { synth.cancel(); speakNext(); }
-    });
-  });
+/* speed controls removed */
 
   const content = document.getElementById('content') || document.querySelector('.content');
   if (content) content.addEventListener('click', handleContentClick);

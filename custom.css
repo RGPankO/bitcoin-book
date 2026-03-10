@@ -31,10 +31,7 @@
   padding: 3px 6px;
   font-size: 12px;
 }
-#tts-controls-sticky .tts-speed-btn {
-  padding: 2px 8px !important;
-  font-size: 12px !important;
-}
+/* speed removed */
 #tts-controls-sticky .tts-status {
   font-size: 11px;
 }
