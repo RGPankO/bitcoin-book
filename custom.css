@@ -15,3 +15,26 @@
   padding: 0 var(--page-padding);
   background: var(--bg);
 }
+
+/* Compact player when sticky (scrolled past original position) */
+#tts-controls-sticky .tts-bar {
+  padding: 5px 10px;
+  gap: 6px;
+  border-radius: 0 0 6px 6px;
+  font-size: 13px;
+}
+#tts-controls-sticky .tts-bar button {
+  padding: 3px 10px;
+  font-size: 13px;
+}
+#tts-controls-sticky .tts-bar select {
+  padding: 3px 6px;
+  font-size: 12px;
+}
+#tts-controls-sticky .tts-speed-btn {
+  padding: 2px 8px !important;
+  font-size: 12px !important;
+}
+#tts-controls-sticky .tts-status {
+  font-size: 11px;
+}
