@@ -76,7 +76,7 @@
 
   // Insert after menu bar (outside scroll container) for proper sticky behavior
   function insertControls() {
-    const menuBar = document.getElementById('mdbook-menu-bar');
+    const menuBar = document.getElementById('menu-bar') || document.getElementById('mdbook-menu-bar');
     if (menuBar) {
       // Wrap in a sticky container outside the content scroll area
       const wrapper = document.createElement('div');

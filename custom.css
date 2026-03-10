@@ -1,5 +1,5 @@
 /* Force mdBook menu bar to always be sticky (their JS removes it on scroll-down) */
-#mdbook-menu-bar {
+#menu-bar, .menu-bar {
   position: -webkit-sticky !important;
   position: sticky !important;
   top: 0 !important;
