@@ -18,6 +18,7 @@ default-theme = "navy"
 preferred-dark-theme = "navy"
 mathjax-support = false
 
+additional-css = ["custom.css"]
 additional-js = ["tts.js"]
 
 [output.html.fold]

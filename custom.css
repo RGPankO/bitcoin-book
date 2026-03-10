@@ -1,0 +1,17 @@
+/* Force mdBook menu bar to always be sticky (their JS removes it on scroll-down) */
+#mdbook-menu-bar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+}
+
+/* TTS player bar — injected after menu bar, outside scroll container */
+#tts-controls-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--menu-bar-height, 50px);
+  z-index: 100;
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  background: var(--bg);
+}

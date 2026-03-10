@@ -32,7 +32,7 @@
 
   const style = document.createElement('style');
   style.textContent = `
-    #tts-controls { position: sticky; top: 0; z-index: 100; margin: 0 0 20px 0; }
+    #tts-controls { z-index: 100; margin: 0 0 20px 0; }
     .tts-bar {
       display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
       padding: 10px 14px; border-radius: 8px;
@@ -74,8 +74,18 @@
   `;
   document.head.appendChild(style);
 
-  // Insert into mdBook content area
+  // Insert after menu bar (outside scroll container) for proper sticky behavior
   function insertControls() {
+    const menuBar = document.getElementById('mdbook-menu-bar');
+    if (menuBar) {
+      // Wrap in a sticky container outside the content scroll area
+      const wrapper = document.createElement('div');
+      wrapper.id = 'tts-controls-sticky';
+      wrapper.appendChild(container);
+      menuBar.parentNode.insertBefore(wrapper, menuBar.nextSibling);
+      return;
+    }
+    // Fallback: insert into content area
     const content = document.getElementById('content') || document.querySelector('.content');
     if (!content) return;
     const main = content.querySelector('main') || content;
