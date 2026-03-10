@@ -23,8 +23,8 @@
       <select id="ttsVoice"></select>
       <div class="tts-speed">
         <button class="tts-speed-btn active" data-rate="1">1×</button>
-        <button class="tts-speed-btn" data-rate="1.1">1.5×</button>
-        <button class="tts-speed-btn" data-rate="1.2">2×</button>
+        <button class="tts-speed-btn" data-rate="1.03">1.5×</button>
+        <button class="tts-speed-btn" data-rate="1.06">2×</button>
       </div>
       <span id="ttsStatus" class="tts-status"></span>
     </div>
