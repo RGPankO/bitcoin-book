@@ -51,9 +51,9 @@
 
 ## Част VI: Бъдещето
 
-- [Глава 21: Теория на игрите между нации](21-teoria-na-igrite-mezhdu-natsii.md)
 - [Глава 18: Новият монетарен стандарт](18-byudesheto-nov-monetaren-standart.md)
 - [Глава 19: Какво да правиш ТИ](19-kakvo-da-pravish-ti.md)
+- [Глава 21: Теория на игрите между нации](21-teoria-na-igrite-mezhdu-natsii.md)
 - [Глава 22: Мирната революция](22-mirnata-revolyutsiya.md)
 - [Заключение](20-zaklyuchenie.md)
 
