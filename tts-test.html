@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTS Test — Биткойн в Пламенов глас</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: #1a1a2e; color: #e0e0e0; line-height: 1.8; padding: 20px; max-width: 800px; margin: 0 auto; }
+  h1 { color: #f5a623; margin-bottom: 10px; font-size: 1.6em; }
+  h2 { color: #f5a623; margin: 30px 0 10px; font-size: 1.2em; }
+  hr { border: none; border-top: 1px solid #333; margin: 20px 0; }
+  em { color: #ccc; }
+  .controls { position: sticky; top: 0; background: #16213e; border: 1px solid #333; border-radius: 12px; padding: 16px; margin-bottom: 24px; z-index: 10; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  button { background: #f5a623; color: #1a1a2e; border: none; padding: 10px 20px; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: 600; }
+  button:hover { background: #e6951a; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  button.stop { background: #e74c3c; color: white; }
+  button.pause { background: #3498db; color: white; }
+  select { background: #0f3460; color: #e0e0e0; border: 1px solid #444; padding: 8px 12px; border-radius: 8px; font-size: 14px; }
+  label { font-size: 13px; color: #888; }
+  .speed { display: flex; align-items: center; gap: 6px; }
+  .speed input { width: 80px; }
+  .status { font-size: 13px; color: #888; width: 100%; margin-top: 4px; }
+  .highlight { background: rgba(245, 166, 35, 0.15); border-radius: 4px; }
+  .chapter { padding: 0 4px; }
+  p { margin: 12px 0; }
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <button id="btnPlay" onclick="startReading()">▶ Слушай</button>
+  <button id="btnPause" class="pause" onclick="togglePause()" disabled>⏸ Пауза</button>
+  <button id="btnStop" class="stop" onclick="stopReading()" disabled>⏹ Стоп</button>
+  
+  <div>
+    <label>Глас:</label>
+    <select id="voiceSelect"></select>
+  </div>
+
+  <div class="speed">
+    <label>Скорост:</label>
+    <input type="range" id="rateSlider" min="0.5" max="2" step="0.1" value="1">
+    <span id="rateValue">1.0x</span>
+  </div>
+  
+  <div class="status" id="status">Изберете глас и натиснете "Слушай"</div>
+</div>
+
+<div id="chapter" class="chapter">
+<h1>Въведение: Защо тази книга</h1>
+<hr>
+<p>Датата е важна.</p>
+<p>Не знам на коя дата четеш тези редове. Но знам едно: каквато и да е тя, цената на биткойн я помни. Биткойн пази история. Всяка транзакция, всеки блок, всяка цена — записани завинаги. За разлика от банковата история на твоите пари, която се пренаписва тихо, всяко десетилетие, с всеки нов закон, всяка нова "спешна мярка", всяко ново печатане.</p>
+<p>Та.</p>
+<p>Тази книга не е за Bitcoin.</p>
+<p>Чакай. Не затваряй.</p>
+<p>Тази книга е за парите. А Bitcoin е само — как да го кажа — доказателството, което не може да бъде оборено. Той е математическият отговор на системата, дето ни лъже от десетилетия. Ако искаш да разбереш Bitcoin, първо трябва да разбереш какво е счупено в парите. И после Bitcoin ще ти изглежда не като "рисков актив" или "спекулативна инвестиция" — а като очевидния следващ стъпка.</p>
+<p>Проблемът е, че хората не го виждат така. И причината е проста: никой не ни е учил.</p>
+<hr>
+<h2>Питали ли са те в училище какво е пари?</h2>
+<p>Помислете. Дванадесет години в система. Математика, физика, химия, история. Дали някой е обяснил какво е инфлацията? Как работи банковата система? Защо централната банка печата пари и как това се отразява на заплатата ти?</p>
+<p>Не. Защото тези въпроси са "политически". Защото отговорите на тези въпроси са неудобни за хората, дето управляват системата. А управляващите имат дълбок, финансов, институционален интерес ти да останеш финансово неграмотен. Колкото по-неграмотен си, толкова по-послушен. Толкова по-доволен с лихвата от 0.1%, толкова по-благодарен за пенсията от 400 лева, толкова по-убеден, че "така е навсякъде".</p>
+<p>Не е така навсякъде. Просто ние не знаем, нали.</p>
+<p>Та в тази книга правим нещо просто: учим. Не аз те уча — ти се учиш. Аз просто съм изредил нещата в ред, с примери, с история, с конкретни числа. Ако прочетеш внимателно — ще излезеш с различен поглед на парите, на системата, на собствените си спестявания.</p>
+<p>А после — решението е твое. Аз не давам инвестиционни съвети. Не съм финансов консултант. Нямам интерес от твоите пари. Имам интерес само от едно: хората около мен да разбират.</p>
+<hr>
+<h2>Технологията, дето се смята за нещо, а е нищо</h2>
+<p>Когато казвам "Bitcoin", повечето хора чуват едно от две неща. Първото: "скъпо нещо, дето скача нагоре-надолу". Второто: "нещо за хакери и наркотрафиканти".</p>
+<p>И двете са грешни. Но не защото хората са глупави — а защото информацията, дето стига до тях, е оформена от медии, дето не разбират протокола, от банки, дето имат пряк интерес да го омаловажат, и от политици, дето виждат заплаха за собствената си власт.</p>
+<p>Сравни го с интернет. 1994-1995. "Интернетът е за маргинали. Никой нормален бизнес няма да го ползва. Хората не искат да четат вестник на екран, когато могат да го купят от вестникарницата." Банките отказват да правят транзакции онлайн защото "не е сигурно". Вестниците пишат за "хаос и анархия в киберпространството".</p>
+<p>Познаваш ли тази история? Защото се повтаря. Дума по дума.</p>
+<p>Днес Bitcoin е "за хакери". Утре ще кажат "беше ясно, нали, очевидно беше ценно". Въпросът е само дали ти ще разбереш преди или след.</p>
+<hr>
+<h2>Какво се е случило с парите ни</h2>
+<p>Ще ти задам един въпрос, и искам да помислиш честно. Не бързо. Честно.</p>
+<p>Работиш. Всеки месец получаваш заплата. Харчиш нужното. Остатъкът — слагаш в банка. Защото така трябва да се прави, нали? Пести за черни дни. Разумен, отговорен човек.</p>
+<p>Сега: каква е инфлацията в България средно за последните 20 години? Около 3-5% годишно в "нормално" време, 10-15% в "кризисно". Каква е лихвата по спестяванията ти? Точно. Нула. Може би 0.1%, ако си намерил добра оферта.</p>
+<p>Значи всяка година, в която спестяванията ти стоят в банка, ти реално губиш покупателна способност. Не губиш цифри. Числото в сметката расте малко, или стои. Но губиш какво можеш да купиш с тях. Тихо. Бавно. Неусетно.</p>
+<p>Кроасанът от детството ми — 30 стотинки. Сега е 1.60 лева. Хлябът — беше под 1 лев, сега е около 2 лева. Очаквам хлябът, докато съм жив, да стане 1000 лева. Вече е 2 лева — дай му още 30 години.</p>
+<p>Това не е природно явление. Не е "просто така". Инфлацията е политика. Решение. Инструмент в ръцете на системата, дето прехвърля богатство от хората, дето пестят, към хората, дето имат активи — недвижими имоти, акции, злато — или просто са "близо до принтера". Икономистите го наричат Cantillon effect. Ние ще го разгледаме подробно в книгата. Но идеята е проста: новите пари не попадат равномерно при всички. Те попадат първо при банките и правителствата. Докато достигнат до теб — вече са "разредени". Вече са инфлирали цените. Ти получи парите, но вече не можеш да купиш с тях това, което са купували преди.</p>
+<p>Представяте ли си как би изглеждало, ако работодателят ти тайно взимаше 3-5% от заплатата ти всяка година? Щеше да му съдиш. Щеше да е скандал. А системата прави точно това — само по-елегантно. Не чрез заплатата. Чрез парите.</p>
+</div>
+
+<script>
+let synth = window.speechSynthesis;
+let utterance = null;
+let paragraphs = [];
+let currentIdx = 0;
+let isPaused = false;
+let voices = [];
+
+function populateVoices() {
+  voices = synth.getVoices();
+  const select = document.getElementById('voiceSelect');
+  select.innerHTML = '';
+  
+  // Bulgarian voices first
+  const bgVoices = voices.filter(v => v.lang.startsWith('bg'));
+  const otherVoices = voices.filter(v => !v.lang.startsWith('bg'));
+  
+  if (bgVoices.length === 0) {
+    const opt = document.createElement('option');
+    opt.textContent = '⚠️ Няма български глас — вижте бележката долу';
+    opt.value = '';
+    select.appendChild(opt);
+  }
+  
+  bgVoices.forEach((v, i) => {
+    const opt = document.createElement('option');
+    opt.value = voices.indexOf(v);
+    opt.textContent = `🇧🇬 ${v.name} (${v.lang})`;
+    if (i === 0) opt.selected = true;
+    select.appendChild(opt);
+  });
+  
+  // Add a separator
+  if (bgVoices.length > 0 && otherVoices.length > 0) {
+    const sep = document.createElement('option');
+    sep.disabled = true;
+    sep.textContent = '── Други гласове ──';
+    select.appendChild(sep);
+  }
+  
+  // Show a few other Slavic/European voices as fallback
+  otherVoices
+    .filter(v => /^(ru|uk|sr|hr|pl|cs|sk|de|en)/.test(v.lang))
+    .slice(0, 10)
+    .forEach(v => {
+      const opt = document.createElement('option');
+      opt.value = voices.indexOf(v);
+      opt.textContent = `${v.name} (${v.lang})`;
+      select.appendChild(opt);
+    });
+    
+  document.getElementById('status').textContent = 
+    bgVoices.length > 0 
+      ? `Намерени ${bgVoices.length} български глас(а). Готово за слушане.`
+      : '⚠️ Няма български глас на това устройство. macOS: System Settings → Accessibility → Spoken Content → Manage Voices → Bulgarian. iOS: Settings → Accessibility → Spoken Content.';
+}
+
+synth.onvoiceschanged = populateVoices;
+populateVoices();
+
+document.getElementById('rateSlider').addEventListener('input', function() {
+  document.getElementById('rateValue').textContent = this.value + 'x';
+});
+
+function getParagraphs() {
+  return Array.from(document.querySelectorAll('#chapter p, #chapter h1, #chapter h2'));
+}
+
+function highlightEl(el) {
+  document.querySelectorAll('.highlight').forEach(e => e.classList.remove('highlight'));
+  if (el) {
+    el.classList.add('highlight');
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+function speakNext() {
+  if (currentIdx >= paragraphs.length) {
+    stopReading();
+    document.getElementById('status').textContent = 'Край на главата.';
+    return;
+  }
+  
+  const el = paragraphs[currentIdx];
+  const text = el.textContent.trim();
+  if (!text) { currentIdx++; speakNext(); return; }
+  
+  highlightEl(el);
+  
+  utterance = new SpeechSynthesisUtterance(text);
+  
+  const voiceIdx = document.getElementById('voiceSelect').value;
+  if (voiceIdx !== '' && voices[voiceIdx]) {
+    utterance.voice = voices[voiceIdx];
+    utterance.lang = voices[voiceIdx].lang;
+  } else {
+    utterance.lang = 'bg-BG';
+  }
+  
+  utterance.rate = parseFloat(document.getElementById('rateSlider').value);
+  utterance.pitch = 1;
+  
+  utterance.onend = function() {
+    currentIdx++;
+    speakNext();
+  };
+  
+  utterance.onerror = function(e) {
+    if (e.error !== 'canceled') {
+      document.getElementById('status').textContent = 'Грешка: ' + e.error;
+    }
+  };
+  
+  document.getElementById('status').textContent = `Параграф ${currentIdx + 1} / ${paragraphs.length}`;
+  synth.speak(utterance);
+}
+
+function startReading() {
+  synth.cancel();
+  paragraphs = getParagraphs();
+  currentIdx = 0;
+  isPaused = false;
+  
+  document.getElementById('btnPlay').disabled = true;
+  document.getElementById('btnPause').disabled = false;
+  document.getElementById('btnStop').disabled = false;
+  document.getElementById('btnPause').textContent = '⏸ Пауза';
+  
+  speakNext();
+}
+
+function togglePause() {
+  if (isPaused) {
+    synth.resume();
+    isPaused = false;
+    document.getElementById('btnPause').textContent = '⏸ Пауза';
+    document.getElementById('status').textContent = `Параграф ${currentIdx + 1} / ${paragraphs.length}`;
+  } else {
+    synth.pause();
+    isPaused = true;
+    document.getElementById('btnPause').textContent = '▶ Продължи';
+    document.getElementById('status').textContent = 'На пауза';
+  }
+}
+
+function stopReading() {
+  synth.cancel();
+  isPaused = false;
+  highlightEl(null);
+  
+  document.getElementById('btnPlay').disabled = false;
+  document.getElementById('btnPause').disabled = true;
+  document.getElementById('btnStop').disabled = true;
+  document.getElementById('btnPause').textContent = '⏸ Пауза';
+  document.getElementById('status').textContent = 'Спряно.';
+}
+
+// Click on paragraph to start from there
+document.getElementById('chapter').addEventListener('click', function(e) {
+  const p = e.target.closest('p, h1, h2');
+  if (!p || !paragraphs.length) return;
+  const idx = paragraphs.indexOf(p);
+  if (idx >= 0) {
+    synth.cancel();
+    currentIdx = idx;
+    isPaused = false;
+    document.getElementById('btnPlay').disabled = true;
+    document.getElementById('btnPause').disabled = false;
+    document.getElementById('btnStop').disabled = false;
+    document.getElementById('btnPause').textContent = '⏸ Пауза';
+    speakNext();
+  }
+});
+</script>
+
+</body>
+</html>
