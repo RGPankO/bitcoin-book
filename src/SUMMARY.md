@@ -64,4 +64,4 @@
 
 - [Приложение А: Речник на термините](appendix-a-rechnik.md)
 - [Приложение Б: Препоръчана литература](appendix-b-literatura.md)
-- [Приложение Д: Bitcoin речник — Слоганите](appendix-d-sleng.md)
+- [Приложение В: Bitcoin речник — Слоганите](appendix-c-sleng.md)
