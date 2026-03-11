@@ -44,7 +44,6 @@
 
 - [Глава 13: Техническите митове](13-tehnicheskie-mitove.md)
 - [Глава 14: Икономическите митове](14-ikonomicheskite-mitove.md)
-- [Глава 14б: AI, Роботи и Дефлацията](14b-ai-roboti-deflatsiata.md)
 - [Глава 15: Социалните и политическите митове](15-sotsialnite-mitove.md)
 - [Глава 16: Митовете за управлението](16-upravlenieto-na-bitcoin.md)
 - [Глава 17: Митовете за бъдещето](17-mitovete-za-byudeshteto.md)
