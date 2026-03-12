@@ -1,0 +1,37 @@
+Total SRTs: 207, Already processed: 272, Pending: 103
+Processing batch of 25 files
+
+→ RqZ93yZ9Lts (188,056b) [+13 rows, 0 dup]
+→ D_CWr-DhDNM (188,735b) [+8 rows, 0 dup]
+→ JnTcQ2Ds1g0 (191,622b) [+12 rows, 0 dup]
+→ GJ7Cbl1VYaA (193,266b) [+24 rows, 0 dup]
+→ 1n4dmEirnDg (194,750b) [+13 rows, 0 dup]
+→ w5TDYFa5G7E (197,398b) [+12 rows, 0 dup]
+→ F9lfyu3kPrI (199,128b) [+9 rows, 0 dup]
+→ X_oKpnYh8UI (199,414b) [+11 rows, 0 dup]
+→ DkYPHwiu-HY (200,251b) [+13 rows, 0 dup]
+→ anAY6HMkoDc (201,540b) [+10 rows, 0 dup]
+→ 5ayX2QZ9OWc (201,726b) [+24 rows, 0 dup]
+→ ItMHUxSuDgM (202,002b) [+10 rows, 0 dup]
+→ mhXB-Bs7lu4 (202,262b) [+10 rows, 0 dup]
+→ slVdcsSv8mk (202,319b) [+12 rows, 0 dup]
+→ uExtB5eYr_4 (202,756b) [+11 rows, 0 dup]
+→ mBy-gHl1Vt8 (204,548b) [+12 rows, 0 dup]
+→ Nmdg--r5Faw (204,673b) [+7 rows, 0 dup]
+→ bVgyMMiZbXA (205,304b) [+7 rows, 0 dup]
+→ mlsbTHgKtPo (206,885b) [+24 rows, 0 dup]
+→ 6kPydvm9iVY (206,969b) [+17 rows, 0 dup]
+→ oOWMGyj3tPo (210,902b) [+16 rows, 0 dup]
+→ F-MNncYXP7w (213,298b) [+11 rows, 0 dup]
+→ TZvaaJ4FAsU (213,644b) [+16 rows, 0 dup]
+→ Sj4BPsATvJQ (214,071b) [+12 rows, 0 dup]
+→ juWq9kCnc9E (214,350b) [+14 rows, 0 dup]
+
+============================================================
+Run complete:
+  Files processed: 25
+  Files skipped:   0
+  Errors:          0
+  DB rows added:   328
+  Still pending:   78
+RESULT: {'processed': 25, 'skipped': 0, 'errors': 0, 'inserted': 328, 'remaining': 78}

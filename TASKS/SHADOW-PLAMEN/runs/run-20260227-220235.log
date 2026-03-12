@@ -1,0 +1,6 @@
+import sys, os
+sys.path.insert(0, '.')
+import extract_batch
+extract_batch.SOURCES_DIR = "/Users/plamen/.openclaw/workspace-entrepreneur/TASKS/SHADOW-PLAMEN/sources-full"
+result = extract_batch.main()
+print("RESULT:", result)

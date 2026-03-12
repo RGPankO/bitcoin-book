@@ -1,0 +1,9 @@
+Run: 2026-02-27 21:31 (Europe/Sofia)
+Source: sources-full/
+Batch size: 25
+Files processed: 25
+Files skipped: 0
+Errors: 0
+DB rows attempted: 317
+DB rows net new: +156 (1,685 → 1,841)
+Remaining pending: 103
